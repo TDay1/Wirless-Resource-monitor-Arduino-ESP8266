@@ -27,6 +27,9 @@ namespace resourcemon
         string errormsg = "Error. Could not send UDP packet. Trying again in 15 seconds";
         string errortitle = "error";
         int errorTime = 15000;
+        string cpu;
+        string cpu2;
+        string cpu3;
 
 
         public Form1()
@@ -72,13 +75,37 @@ namespace resourcemon
         {
             while (cpubool == true)
             {
-                System.Threading.Thread.Sleep(100);
-                float t = total_cpu.NextValue();
-                string cpu = string.Format("{0:N2}", t);
-                string cpu2 = String.Format("CPU: {0}%", cpu);
+                System.Threading.Thread.Sleep(500);
+                float t5 = total_cpu.NextValue();
+                System.Threading.Thread.Sleep(500);
+                float t10 = total_cpu.NextValue();
+                float t15 = t5 + t10;
+                float t = t15 / 2;
+                cpu = string.Format("{0:N2}", t);
+                cpu2 = String.Format("CPU: {0}%", cpu);
+
+                if (cpu2.Length == 11)
+                {
+                    cpu3 = cpu2;
+                    send();
+                }
+                else
+                {
+                    if (cpu2.Length == 10)
+                    {
+                        cpu3 = String.Format("{0} ", cpu2);
+                        send();
+                    }
+                    else
+                    {
+                        cpu3 = cpu2.Remove(10);
+                        send();
+
+                    }
+                }
 
                 //Send UDP
-
+            /*
                 UdpClient udpClient = new UdpClient(ipAdress, port);
                 Byte[] sendBytes = Encoding.ASCII.GetBytes(cpu2);
                 try
@@ -89,9 +116,25 @@ namespace resourcemon
                 {
                     MessageBox.Show(errormsg , errortitle);
                     Thread.Sleep(errorTime);
-                }
+                } */
             }
             finish();
+        }
+
+        public void send()
+        {
+            //send udp
+            UdpClient udpClient = new UdpClient(ipAdress, port);
+            Byte[] sendBytes = Encoding.ASCII.GetBytes(cpu3);
+            try
+            {
+                udpClient.Send(sendBytes, sendBytes.Length);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show(errormsg, errortitle);
+                Thread.Sleep(errorTime);
+            }
         }
 
         public void finish()
