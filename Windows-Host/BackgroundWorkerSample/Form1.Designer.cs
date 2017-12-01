@@ -1,4 +1,4 @@
-﻿namespace BackgroundWorkerSample
+﻿namespace resourcemon
 {
     partial class Form1
     {

@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using System.Net.Sockets;
 using System.Diagnostics;
 
-namespace BackgroundWorkerSample
+namespace resourcemon
 {
     public partial class Form1 : Form
     {
@@ -19,8 +19,8 @@ namespace BackgroundWorkerSample
         BackgroundWorker m_oWorker;
         bool cpubool;
         PerformanceCounter total_cpu = new PerformanceCounter("Processor", "% Processor Time", "_Total");
-        string ipAdress = "192.168.0.160";
-        int port = 42069;
+        string ipAdress = "192.168.0.75";
+        int port = 7777;
 
         public Form1()
         {

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BackgroundWorkerSample")]
+[assembly: AssemblyTitle("resourcemon")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Robert Bosch Engineering and Business Solutions Lt")]
-[assembly: AssemblyProduct("BackgroundWorkerSample")]
+[assembly: AssemblyProduct("resourcemon")]
 [assembly: AssemblyCopyright("Copyright © Robert Bosch Engineering and Business Solutions Lt 2010")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

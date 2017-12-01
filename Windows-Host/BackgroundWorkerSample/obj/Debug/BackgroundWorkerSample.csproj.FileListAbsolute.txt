@@ -6,3 +6,11 @@ C:\Users\30486\Desktop\Practice\BackgroundWorkerSample\obj\Debug\BackgroundWorke
 C:\Users\30486\Desktop\Practice\BackgroundWorkerSample\obj\Debug\BackgroundWorkerSample.csproj.GenerateResource.Cache
 C:\Users\30486\Desktop\Practice\BackgroundWorkerSample\obj\Debug\BackgroundWorkerSample.exe
 C:\Users\30486\Desktop\Practice\BackgroundWorkerSample\obj\Debug\BackgroundWorkerSample.pdb
+C:\Users\Thomas\Documents\GitHub\Wirless-Resource-monitor-Arduino-ESP8266\Windows-Host\BackgroundWorkerSample\obj\Debug\BackgroundWorkerSample.exe
+C:\Users\Thomas\Documents\GitHub\Wirless-Resource-monitor-Arduino-ESP8266\Windows-Host\BackgroundWorkerSample\obj\Debug\BackgroundWorkerSample.pdb
+C:\Users\Thomas\Documents\GitHub\Wirless-Resource-monitor-Arduino-ESP8266\Windows-Host\BackgroundWorkerSample\bin\Debug\BackgroundWorkerSample.exe
+C:\Users\Thomas\Documents\GitHub\Wirless-Resource-monitor-Arduino-ESP8266\Windows-Host\BackgroundWorkerSample\bin\Debug\BackgroundWorkerSample.pdb
+C:\Users\Thomas\Documents\GitHub\Wirless-Resource-monitor-Arduino-ESP8266\Windows-Host\BackgroundWorkerSample\obj\Debug\BackgroundWorkerSample.csprojResolveAssemblyReference.cache
+C:\Users\Thomas\Documents\GitHub\Wirless-Resource-monitor-Arduino-ESP8266\Windows-Host\BackgroundWorkerSample\obj\Debug\resourcemon.Properties.Resources.resources
+C:\Users\Thomas\Documents\GitHub\Wirless-Resource-monitor-Arduino-ESP8266\Windows-Host\BackgroundWorkerSample\obj\Debug\BackgroundWorkerSample.csproj.GenerateResource.Cache
+C:\Users\Thomas\Documents\GitHub\Wirless-Resource-monitor-Arduino-ESP8266\Windows-Host\BackgroundWorkerSample\obj\Debug\resourcemon.Form1.resources

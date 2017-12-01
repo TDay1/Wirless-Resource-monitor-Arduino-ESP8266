@@ -8,7 +8,7 @@
     <ProjectGuid>{EAB746AC-58BA-4671-9B90-2CE955BE4FEE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BackgroundWorkerSample</RootNamespace>
+    <RootNamespace>resourcemon</RootNamespace>
     <AssemblyName>BackgroundWorkerSample</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
