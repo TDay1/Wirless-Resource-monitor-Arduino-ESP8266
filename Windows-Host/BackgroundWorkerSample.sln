@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundWorkerSample", "BackgroundWorkerSample\BackgroundWorkerSample.csproj", "{EAB746AC-58BA-4671-9B90-2CE955BE4FEE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "resourcemon", "resourcemon\resourcemon.csproj", "{EAB746AC-58BA-4671-9B90-2CE955BE4FEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

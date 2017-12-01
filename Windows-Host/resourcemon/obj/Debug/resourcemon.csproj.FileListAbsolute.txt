@@ -1,0 +1,8 @@
+C:\Users\Thomas\Documents\GitHub\Wirless-Resource-monitor-Arduino-ESP8266\Windows-Host\resourcemon\obj\Debug\BackgroundWorkerSample.exe
+C:\Users\Thomas\Documents\GitHub\Wirless-Resource-monitor-Arduino-ESP8266\Windows-Host\resourcemon\obj\Debug\BackgroundWorkerSample.pdb
+C:\Users\Thomas\Documents\GitHub\Wirless-Resource-monitor-Arduino-ESP8266\Windows-Host\resourcemon\bin\Debug\BackgroundWorkerSample.exe
+C:\Users\Thomas\Documents\GitHub\Wirless-Resource-monitor-Arduino-ESP8266\Windows-Host\resourcemon\bin\Debug\BackgroundWorkerSample.pdb
+C:\Users\Thomas\Documents\GitHub\Wirless-Resource-monitor-Arduino-ESP8266\Windows-Host\resourcemon\obj\Debug\resourcemon.csprojResolveAssemblyReference.cache
+C:\Users\Thomas\Documents\GitHub\Wirless-Resource-monitor-Arduino-ESP8266\Windows-Host\resourcemon\obj\Debug\resourcemon.Form1.resources
+C:\Users\Thomas\Documents\GitHub\Wirless-Resource-monitor-Arduino-ESP8266\Windows-Host\resourcemon\obj\Debug\resourcemon.Properties.Resources.resources
+C:\Users\Thomas\Documents\GitHub\Wirless-Resource-monitor-Arduino-ESP8266\Windows-Host\resourcemon\obj\Debug\resourcemon.csproj.GenerateResource.Cache

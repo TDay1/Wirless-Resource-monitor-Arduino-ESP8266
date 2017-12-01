@@ -45,7 +45,7 @@
             this.viewToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(199, 97);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(100, 48);
             this.contextMenuStrip1.TabStop = true;
             // 
             // viewToolStripMenuItem
@@ -53,7 +53,7 @@
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cPUToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(198, 30);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.viewToolStripMenuItem.Text = "View";
             // 
             // cPUToolStripMenuItem
@@ -62,14 +62,14 @@
             this.cPUToolStripMenuItem.CheckOnClick = true;
             this.cPUToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cPUToolStripMenuItem.Name = "cPUToolStripMenuItem";
-            this.cPUToolStripMenuItem.Size = new System.Drawing.Size(129, 30);
+            this.cPUToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
             this.cPUToolStripMenuItem.Text = "CPU";
             this.cPUToolStripMenuItem.Click += new System.EventHandler(this.cPUToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(198, 30);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -82,14 +82,13 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(313, 294);
+            this.ClientSize = new System.Drawing.Size(209, 191);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
-            this.Text = "BackgroundWorker Sample";
+            this.Text = "Resource Monitor";
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 

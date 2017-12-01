@@ -4,8 +4,8 @@
 #include <WiFiUdp.h>
 
 //Enter the details of your wifi network below
-const char* ssid     = "SSID Here";
-const char* password = "Password";
+const char* ssid     = "SSID HERE";
+const char* password = "PASSWORD HERE";
 //set ip
 IPAddress IP(192, 168, 0, 160); 
 //set Subnet Gateway
@@ -14,9 +14,9 @@ IPAddress subnetIP(192, 168, 0, 1);
 IPAddress subMask(255, 255, 255, 0);
 
 WiFiUDP UDPTestServer;
-unsigned int UDPPort = 42069;
+unsigned int UDPPort = 7777;
 
-const int packetSize = 10;
+const int packetSize = 11;
 byte packetBuffer[packetSize];
 
 void setup() {

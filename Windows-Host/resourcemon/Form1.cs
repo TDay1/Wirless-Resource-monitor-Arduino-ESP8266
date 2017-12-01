@@ -13,14 +13,21 @@ namespace resourcemon
 {
     public partial class Form1 : Form
     {
-        /// <summary>
-        /// The backgroundworker object on which the time consuming operation shall be executed
-        /// </summary>
+        //enter ip and port of reciever
+        string ipAdress = "192.168.0.160";
+        int port = 7777;
+       
+        // The backgroundworker object on which the time consuming operation shall be executed
         BackgroundWorker m_oWorker;
+        //Declaring Variables
         bool cpubool;
         PerformanceCounter total_cpu = new PerformanceCounter("Processor", "% Processor Time", "_Total");
-        string ipAdress = "192.168.0.75";
-        int port = 7777;
+        string byeMessage = "Goodbye!   ";
+        string clear = "           ";
+        string errormsg = "Error. Could not send UDP packet. Trying again in 15 seconds";
+        string errortitle = "error";
+        int errorTime = 15000;
+
 
         public Form1()
         {
@@ -65,10 +72,10 @@ namespace resourcemon
         {
             while (cpubool == true)
             {
+                System.Threading.Thread.Sleep(100);
                 float t = total_cpu.NextValue();
                 string cpu = string.Format("{0:N2}", t);
                 string cpu2 = String.Format("CPU: {0}%", cpu);
-                System.Threading.Thread.Sleep(100);
 
                 //Send UDP
 
@@ -80,26 +87,31 @@ namespace resourcemon
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Error. Could not send UDP packet. Trying again in 20 seconds", "Error");
-                    Thread.Sleep(20000);
+                    MessageBox.Show(errormsg , errortitle);
+                    Thread.Sleep(errorTime);
                 }
             }
-            //ytre
-            string byeMessage = "Goodbye!  ";
-            string clear = "";
+            finish();
+        }
+
+        public void finish()
+        {
+            //end
             UdpClient udpClient2 = new UdpClient(ipAdress, port);
             Byte[] sendBytes2 = Encoding.ASCII.GetBytes(byeMessage);
             Byte[] sendBytes3 = Encoding.ASCII.GetBytes(clear);
             try
             {
+                //Say bye
                 udpClient2.Send(sendBytes2, sendBytes2.Length);
-                Thread.Sleep(750);
+                Thread.Sleep(500);
+                //clear the screen
                 udpClient2.Send(sendBytes3, sendBytes3.Length);
             }
             catch (Exception)
             {
-                MessageBox.Show("Error. Could not send UDP packet. Trying again in 20 seconds", "Error");
-                Thread.Sleep(20000);
+                MessageBox.Show(errormsg, errortitle);
+                Thread.Sleep(errorTime);
             }
         }
 
@@ -134,6 +146,8 @@ namespace resourcemon
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            cpubool = false;
+            Thread.Sleep(600);
             Application.Exit();
         }
     }
